@@ -14,7 +14,15 @@ new_data <- subset(new_managers_data, select = c("Date",
                                                  "Q3", 
                                                  "Q4", 
                                                  "Q5"))
-new_data
+new_data <- new_managers_data[c("Date", 
+                                "Country", 
+                                "Gender", 
+                                "Age", 
+                                "Q1", 
+                                "Q2", 
+                                "Q3", 
+                                "Q4", 
+                                "Q5")]
 
 new_data$AgeCat[new_data$Age >= 45] <- "Elder"
 new_data$AgeCat[new_data$Age >= 26 & new_data$Age <= 44] <- "Middle Aged"

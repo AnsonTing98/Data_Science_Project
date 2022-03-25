@@ -39,7 +39,8 @@ library(mice)
 
 md.pattern(managers_data)
 
-install.packages("lmtest", dependencies = TRUE)
+# select NO when install lmtest
+install.packages("lmtest")
 library(lmtest)
 
 # Use VIM package to show missing values
