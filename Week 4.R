@@ -123,3 +123,4 @@ plot(mpg,
      xlab = "Index", 
      ylab = "MPG")
 
+par(opar)
