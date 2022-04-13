@@ -124,3 +124,5 @@ plot(mpg,
      ylab = "MPG")
 
 par(opar)
+
+pie(drugs$drugA)
